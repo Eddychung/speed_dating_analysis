@@ -6,7 +6,11 @@ dating <- read.table('../../data/SpeedDatingData.csv', header=TRUE, sep=',', fil
 # For this part of the analysis, I want to look at the relationship between how a person 
 # ranked their match with their Yes/No decision of whether they would like to date them
 
-scorecard <- dating[c('dec', 'attr', 'sinc', 'intel', 'fun', 'amb', 'shar', 'like', 'prob', 'met')]
+scorecard_full <- dating[c('dec', 'attr', 'sinc', 'intel', 'fun', 'amb', 'shar', 'like', 'prob', 'met')] #keeping variables for later if time permits
+temp <- dating[c('dec', 'attr', 'sinc', 'intel', 'fun', 'amb', 'shar')]
+scorecard <- na.omit(temp)
+
+##############################
 
 # Singular linear regressions
 reg1 = lm(dec ~ attr, data=scorecard)
@@ -64,6 +68,9 @@ scatterplot_sharXmatch = (ggplot(data=scorecard, aes(shar, dec))
 ################################################
 ################################################
 
+## Correlations
+correlation_matrix <- cor(scorecard)
+
 ## Multivariate Linear Regression
 
 multiregression <- lm(dec ~ attr+sinc+intel+fun+amb+shar, data=scorecard)
@@ -95,4 +102,5 @@ save(reg_summary_attr, reg_summary_sinc, reg_summary_intel, reg_summary_fun, reg
      scatterplot_attrXmatch, scatterplot_sincXmatch, scatterplot_intelXmatch,
      scatterplot_funXmatch, scatterplot_ambXmatch, scatterplot_sharXmatch,
      reg_summary_multi, file = "../../data/regression.RData")
+save(correlation_matrix, file = "../../data/correlation-matrix.RData")
 
