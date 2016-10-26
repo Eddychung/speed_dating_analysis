@@ -4,11 +4,6 @@
 
 dating <- read.table('../../data/SpeedDatingData.csv', header=TRUE, sep=',', fill=TRUE)
 
-summary(dating$round)
-summary(dating$match)
-length(unique(dating$iid)) #296 number of unique subject numbers
-
-
 # Subsetting based on waves
 
 # Waves 6-9 had to rate the importance of attributes in a potential date on a scale of 1-10
