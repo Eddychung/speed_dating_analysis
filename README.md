@@ -28,31 +28,38 @@ BONUS: Create a story about interesting relationships or findings in that you ha
 
 <pre><code>speed_dating_analysis/
 README.md
+Makefile
 code/
-functions/
-regression-functions.R
-bayes-function.R
-scripts/
-dating-similarity-script.R
-eda-script.R
-gender-bias-script.R
-regression-script.R
+ README.md
+ functions/
+  regression-functions.R
+  bayes-function.R
+ scripts/
+  dating-similarity-script.R
+  eda-script.R
+  gender-bias-script.R
+  regression-script.R
 data/
-bayes-data.RData
-correlation-matrix.RData
-eda-output.txt
-regression-gender.RData
-regression.RData
-scorecard.csv
-SpeedDatingData.csv
+ README.md
+ bayes-data.RData
+ correlation-matrix.RData
+ eda-output.txt
+ regression-gender.RData
+ regression.RData
+ SpeedDatingData.csv
 images/
-images
+ *.png
 report/
-report.Rmd
-report.pdf
+ report.Rmd
+ report.pdf
+session-info.txt
+.gitignore
 </code></pre>
 
-### How to follow this project
+### How to reproduce this project
+
+1. Clone this github repository
+2. Within the directory `./speed-dating-analysis`, in the command line type `make all`. This will run the R scripts to create the images, save this data then use it within the Rmd file to produce the final report.
 
 Each script and function produces a different analysis in the final report. Images are all produced within script files, and are used in the final report. Data is saved from all scripts and functions in the data folder in the RData format.
 
