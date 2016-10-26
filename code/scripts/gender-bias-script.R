@@ -1,13 +1,13 @@
 # Gender Bias on matching
 
 # Getting the data
-dating <- read.table('../../data/SpeedDatingData.csv', header=TRUE, sep=',', fill=TRUE)
+dating2 <- read.table('../../data/SpeedDatingData.csv', header=TRUE, sep=',', fill=TRUE)
 
 # For this part of the analysis, I want to look at the relationship between how a person 
 # ranked their match with their Yes/No decision of whether they would like to date them
 # grouped by gender
 
-temp <- dating[c('dec', 'attr', 'sinc', 'intel', 'fun', 'amb', 'shar', 'gender')]
+temp <- dating2[c('dec', 'attr', 'sinc', 'intel', 'fun', 'amb', 'shar', 'gender')]
 scorecard_gender <- na.omit(temp)
 
 # Females
