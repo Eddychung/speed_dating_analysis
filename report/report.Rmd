@@ -1,7 +1,6 @@
 ---
 title: "Speed Dating Analysis"
 author: "Lauren Hanlon"
-date: "October 25, 2016"
 output: pdf_document
 ---
 
@@ -16,6 +15,8 @@ source("../code/functions/regression-functions.R")
 ```
 
 ## Introduction
+
+My public GitHub repo including all code, images and data is [here](https://github.com/laurenhanlon/speed_dating_analysis)
 
 For this analysis I will refer to a "speed dating" experiment conducted in 2006. You can find the data [here](https://cl.ly/2Y3I1d3b0p2N/Archive%202014-08-05%20at%201.27.45%20AM.zip).
 
