@@ -63,8 +63,8 @@ hist(qualities_1$Shared, xlab='shared interests importance', breaks=10, main='Sh
 dev.off()
 
 ## Visualize Means
-png('../../images/qualities-scaled-plot.png')
-boxplot(qualities_1[,-1], horizontal=TRUE, main='Scores of Qualities in a Partner', col='cadetblue2', las=1)
+png('../../images/qualities-score-plot.png')
+boxplot(qualities_1, horizontal=TRUE, main='Scores of Qualities in a Partner', col='cadetblue2', las=1)
 dev.off()
 
 ##############################
@@ -86,7 +86,7 @@ qualities_scaled_plot <- ggplot(df, aes(x=variable,y=value)) +
   ggtitle('Distributed Weights of Qualities in a Partner')+
   xlab('Qualities')
 
-png('../../images/qualities-scaled-plot.png')
+png('../../images/qualities-distrubted-plot.png')
 qualities_scaled_plot
 dev.off()
 
