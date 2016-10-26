@@ -13,12 +13,14 @@ length(unique(dating$iid)) #296 number of unique subject numbers
 
 # Waves 6-9 had to rate the importance of attributes in a potential date on a scale of 1-10
 dating_scales <- subset(dating, wave>=6 & wave<=9)
-qualities_1 <- dating_scales[c('attr1_1', 'sinc1_1', 'intel1_1', 'fun1_1', 'amb1_1', 'shar1_1')]
+temp <- dating_scales[c('attr1_1', 'sinc1_1', 'intel1_1', 'fun1_1', 'amb1_1', 'shar1_1')]
+qualities_1 <- na.omit(temp)
 names(qualities_1) <- c('Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests')
 
 # Waves 1-5, 10-21 had 100 points to distrubte among the following attributes
 dating_distribute <- subset(dating, wave<=5 | wave>=10)
-qualities_2 <- dating_distribute[c('attr1_1', 'sinc1_1', 'intel1_1', 'fun1_1', 'amb1_1', 'shar1_1')]
+temp2 <- dating_distribute[c('attr1_1', 'sinc1_1', 'intel1_1', 'fun1_1', 'amb1_1', 'shar1_1')]
+qualities_2 <- na.omit(temp2)
 names(qualities_2) <- c('Attractive', 'Sincere', 'Intelligent', 'Fun', 'Ambitious', 'Shared Interests')
 
 # Summary statistics
