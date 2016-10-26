@@ -59,7 +59,8 @@ session-info.txt
 ### How to reproduce this project
 
 1. Clone this github repository
-2. Within the directory `./speed-dating-analysis`, in the command line type `make all`. This will run the R scripts to create the images, save this data then use it within the Rmd file to produce the final report.
+2. Make sure SpeedDatingData.csv is saved in the _data_ folder
+3. Within the directory `./speed-dating-analysis`, in the command line type `make all`. This will run the R scripts to create the images, save this data then use it within the Rmd file to produce the final report.
 
 Each script and function produces a different analysis in the final report. Images are all produced within script files, and are used in the final report. Data is saved from all scripts and functions in the data folder in the RData format.
 
