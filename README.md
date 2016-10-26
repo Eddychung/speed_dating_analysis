@@ -10,7 +10,7 @@ For this analysis I will refer to a "speed dating" experiment conducted in 2006.
 
 More background on the experiment:
 
-> "In the experiment, a few hundred students in several waves were randomly assigned to 10 short dates. At the end of each 4-minute date each participant filled out a scorecard that asked them to decide whether or not they would like to see the other person again (1=yes or 0=no). The participants were also asked to record subjective numerical ratings for the other person (attractive, sincere, intelligent, fun, ambitions, has shared interests/hobbies). A pre-interview and a follow-up survey also captured data about participants' backgrounds, preferences, and some other characteristics.""
+> "In the experiment, a few hundred students in several waves were randomly assigned to 10 short dates. At the end of each 4-minute date each participant filled out a scorecard that asked them to decide whether or not they would like to see the other person again (1=yes or 0=no). The participants were also asked to record subjective numerical ratings for the other person (attractive, sincere, intelligent, fun, ambitions, has shared interests/hobbies). A pre-interview and a follow-up survey also captured data about participants' backgrounds, preferences, and some other characteristics."
 
 ## Goal
 
