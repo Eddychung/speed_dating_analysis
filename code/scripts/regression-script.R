@@ -10,6 +10,9 @@ scorecard_full <- dating[c('dec', 'attr', 'sinc', 'intel', 'fun', 'amb', 'shar',
 temp <- dating[c('dec', 'attr', 'sinc', 'intel', 'fun', 'amb', 'shar')]
 scorecard <- na.omit(temp)
 
+# Save for future use
+write.table(scorecard, file='../../data/scorecard.csv')
+
 ##############################
 
 # Singular linear regressions
@@ -71,6 +74,23 @@ scatterplot_sharXmatch = (ggplot(data=scorecard, aes(shar, dec))
 ## Correlations
 correlation_matrix <- cor(scorecard)
 
+## Scatterplot matrix
+#Scatterplot Matrices from the glus Package 
+library(gclus)
+scorecard.r <- abs(cor(scorecard)) # get correlations
+scorecard.col <- dmat.color(scorecard.r) # get colors
+# reorder variables so those with highest correlation
+# are closest to the diagonal
+scorecard.o <- order.single(scorecard.r) 
+png('../../images/scatterplot-matrix.png')
+cpairs(scorecard, scorecard.o, panel.colors=scorecard.col, gap=.7,
+       main="Scatterplot Matrix" )
+dev.off()
+
+################################################
+################################################
+################################################
+
 ## Multivariate Linear Regression
 
 multiregression <- lm(dec ~ attr+sinc+intel+fun+amb+shar, data=scorecard)
@@ -98,7 +118,7 @@ dev.off()
 
 ## Save all to RData
 
-save(reg_summary_attr, reg_summary_sinc, reg_summary_intel, reg_summary_fun, reg_summary_amb, reg_summary_shar,
+save(multiregression, reg_summary_attr, reg_summary_sinc, reg_summary_intel, reg_summary_fun, reg_summary_amb, reg_summary_shar,
      scatterplot_attrXmatch, scatterplot_sincXmatch, scatterplot_intelXmatch,
      scatterplot_funXmatch, scatterplot_ambXmatch, scatterplot_sharXmatch,
      reg_summary_multi, file = "../../data/regression.RData")
