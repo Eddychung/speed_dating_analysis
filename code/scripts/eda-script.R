@@ -5,8 +5,6 @@
 dating <- read.table('../../data/SpeedDatingData.csv', header=TRUE, sep=',', fill=TRUE)
 
 summary(dating$round)
-#mean is 16.75
-#min 5, max 22
 summary(dating$match)
 length(unique(dating$iid)) #296 number of unique subject numbers
 
@@ -62,6 +60,11 @@ png('../../images/histogram-shared-scaled.png')
 hist(qualities_1$Shared, xlab='shared interests importance', breaks=10, main='Shared Interests Histogram', col='cadetblue3', ylim=c(0, 400), xlim=c(0,25))
 dev.off()
 
+## Visualize Means
+png('../../images/qualities-scaled-plot.png')
+boxplot(qualities_1[,-1], horizontal=TRUE, main='Scores of Qualities in a Partner', col='cadetblue2', las=1)
+dev.off()
+
 ##############################
 
 # Distributed values
@@ -89,5 +92,3 @@ dev.off()
 
 ## Save Outputs to txt file and RData file
 capture.output(summary_qual1, summary_qual2, summary_percentages, file = "../../data/eda-output.txt")
-
-#save(correlation_matrix, file = "../../data/correlation-matrix.RData")
