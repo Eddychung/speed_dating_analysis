@@ -1,21 +1,42 @@
-   Attractive       Sincere       Intelligent         Fun          Ambitious     Shared Interests
- Min.   : 6.67   Min.   : 5.13   Min.   :14.71   Min.   :12.50   Min.   : 2.33   Min.   : 2.27   
- 1st Qu.:14.29   1st Qu.:16.67   1st Qu.:17.39   1st Qu.:16.67   1st Qu.:13.04   1st Qu.:12.50   
- Median :16.00   Median :17.78   Median :18.87   Median :17.95   Median :15.69   Median :14.89   
- Mean   :16.16   Mean   :17.82   Mean   :18.99   Mean   :17.91   Mean   :14.73   Mean   :14.39   
- 3rd Qu.:18.00   3rd Qu.:19.44   3rd Qu.:20.00   3rd Qu.:19.23   3rd Qu.:17.78   3rd Qu.:17.07   
- Max.   :27.78   Max.   :23.81   Max.   :23.81   Max.   :27.78   Max.   :20.59   Max.   :23.81   
-   Attractive        Sincere       Intelligent         Fun          Ambitious      Shared Interests
- Min.   :  0.00   Min.   : 0.00   Min.   : 0.00   Min.   : 0.00   Min.   : 0.000   Min.   : 0.00   
- 1st Qu.: 15.00   1st Qu.:15.00   1st Qu.:19.00   1st Qu.:12.00   1st Qu.: 5.000   1st Qu.: 5.00   
- Median : 20.00   Median :20.00   Median :20.00   Median :18.00   Median :10.000   Median :10.00   
- Mean   : 23.31   Mean   :17.65   Mean   :21.39   Mean   :17.15   Mean   : 9.746   Mean   :10.91   
- 3rd Qu.: 30.00   3rd Qu.:20.00   3rd Qu.:25.00   3rd Qu.:20.00   3rd Qu.:15.000   3rd Qu.:15.00   
- Max.   :100.00   Max.   :40.00   Max.   :50.00   Max.   :40.00   Max.   :53.000   Max.   :30.00   
-   Attractive        Sincere        Intelligent          Fun           Ambitious       Shared Interests
- Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.00000   Min.   :0.0000  
- 1st Qu.:0.1500   1st Qu.:0.1500   1st Qu.:0.1900   1st Qu.:0.1200   1st Qu.:0.05000   1st Qu.:0.0500  
- Median :0.2000   Median :0.2000   Median :0.2000   Median :0.1800   Median :0.10000   Median :0.1000  
- Mean   :0.2331   Mean   :0.1765   Mean   :0.2139   Mean   :0.1715   Mean   :0.09746   Mean   :0.1091  
- 3rd Qu.:0.3000   3rd Qu.:0.2000   3rd Qu.:0.2500   3rd Qu.:0.2000   3rd Qu.:0.15000   3rd Qu.:0.1500  
- Max.   :1.0000   Max.   :0.4000   Max.   :0.5000   Max.   :0.4000   Max.   :0.53000   Max.   :0.3000  
+   Attractive       Sincere       Intelligent         Fun       
+ Min.   : 6.67   Min.   : 5.13   Min.   :14.71   Min.   :12.50  
+ 1st Qu.:14.29   1st Qu.:16.67   1st Qu.:17.39   1st Qu.:16.67  
+ Median :16.00   Median :17.78   Median :18.87   Median :17.95  
+ Mean   :16.16   Mean   :17.82   Mean   :18.99   Mean   :17.91  
+ 3rd Qu.:18.00   3rd Qu.:19.44   3rd Qu.:20.00   3rd Qu.:19.23  
+ Max.   :27.78   Max.   :23.81   Max.   :23.81   Max.   :27.78  
+   Ambitious     Shared Interests
+ Min.   : 2.33   Min.   : 2.27   
+ 1st Qu.:13.04   1st Qu.:12.50   
+ Median :15.69   Median :14.89   
+ Mean   :14.73   Mean   :14.39   
+ 3rd Qu.:17.78   3rd Qu.:17.07   
+ Max.   :20.59   Max.   :23.81   
+   Attractive        Sincere       Intelligent         Fun       
+ Min.   :  0.00   Min.   : 0.00   Min.   : 0.00   Min.   : 0.00  
+ 1st Qu.: 15.00   1st Qu.:15.00   1st Qu.:19.00   1st Qu.:12.00  
+ Median : 20.00   Median :20.00   Median :20.00   Median :18.00  
+ Mean   : 23.31   Mean   :17.65   Mean   :21.39   Mean   :17.15  
+ 3rd Qu.: 30.00   3rd Qu.:20.00   3rd Qu.:25.00   3rd Qu.:20.00  
+ Max.   :100.00   Max.   :40.00   Max.   :50.00   Max.   :40.00  
+   Ambitious      Shared Interests
+ Min.   : 0.000   Min.   : 0.00   
+ 1st Qu.: 5.000   1st Qu.: 5.00   
+ Median :10.000   Median :10.00   
+ Mean   : 9.746   Mean   :10.91   
+ 3rd Qu.:15.000   3rd Qu.:15.00   
+ Max.   :53.000   Max.   :30.00   
+   Attractive        Sincere        Intelligent          Fun        
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.1500   1st Qu.:0.1500   1st Qu.:0.1900   1st Qu.:0.1200  
+ Median :0.2000   Median :0.2000   Median :0.2000   Median :0.1800  
+ Mean   :0.2331   Mean   :0.1765   Mean   :0.2139   Mean   :0.1715  
+ 3rd Qu.:0.3000   3rd Qu.:0.2000   3rd Qu.:0.2500   3rd Qu.:0.2000  
+ Max.   :1.0000   Max.   :0.4000   Max.   :0.5000   Max.   :0.4000  
+   Ambitious       Shared Interests
+ Min.   :0.00000   Min.   :0.0000  
+ 1st Qu.:0.05000   1st Qu.:0.0500  
+ Median :0.10000   Median :0.1000  
+ Mean   :0.09746   Mean   :0.1091  
+ 3rd Qu.:0.15000   3rd Qu.:0.1500  
+ Max.   :0.53000   Max.   :0.3000  
