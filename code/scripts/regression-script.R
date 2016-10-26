@@ -10,9 +10,6 @@ scorecard_full <- dating[c('dec', 'attr', 'sinc', 'intel', 'fun', 'amb', 'shar',
 temp <- dating[c('dec', 'attr', 'sinc', 'intel', 'fun', 'amb', 'shar')]
 scorecard <- na.omit(temp)
 
-# Save for future use
-write.table(scorecard, file='../../data/scorecard.csv')
-
 ##############################
 
 # Singular linear regressions
